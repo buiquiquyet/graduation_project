@@ -4,7 +4,8 @@ import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 const request = axios.create({
   // baseURL: config.API_URL,
   // baseURL: "https://localhost:7112/api",
-  baseURL: "https://localhost:5001/api",
+  // baseURL: "https://localhost:5001/api",
+  baseURL: `${import.meta.env.VITE_API_URL}/api`,
   timeout: 100000,
 });
 export enum EAxiosResponse {

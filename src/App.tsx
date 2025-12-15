@@ -14,7 +14,7 @@ interface MyContextType {
 export const MyContext = createContext<MyContextType | null>(null);
 
 function App() {
-  const publicUrl = environment.publicUrl;
+  const publicUrl = import.meta.env.VITE_PUBLIC_URL;
   const contextValue: MyContextType = {
     publicUrl,
   };

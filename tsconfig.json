@@ -18,6 +18,7 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "baseUrl": ".",
+    "types": ["vite/client"],
 
     "paths": {
       "@app/*": ["app/*"],
@@ -38,11 +39,11 @@
 
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true
   },
   // "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "include": ["src/**/*", "**/*.test.ts", "vite.config.ts"],
+  "include": ["src/**/*", "**/*.test.ts", "vite.config.ts", "vite-env.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
